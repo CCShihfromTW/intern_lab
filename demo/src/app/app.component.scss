@@ -1,0 +1,54 @@
+.smallText{
+    font-size: 20px;
+}
+
+
+/*
+Syntax: 
+    SCSS follows a nested syntax similar to programming languages like JavaScript,
+    which allows you to nest selectors within one another. CSS, on the other hand,
+    uses a flat syntax without nesting.
+
+Variables: 
+    SCSS allows the use of variables, which can store and reuse values throughout the stylesheet.
+     CSS does not support variables natively.
+
+Mixins: 
+    SCSS provides mixins, which allow you to define reusable blocks of styles that can be included in multiple selectors.
+    CSS does not have a built-in mixin feature.
+
+Inheritance: 
+    SCSS supports inheritance using the @extend directive,
+    allowing styles from one selector to be applied to another.
+    CSS does not have native support for inheritance.
+
+Imports: 
+    SCSS supports importing partial stylesheets using the @import directive,
+    making it easier to organize and modularize your styles.
+    CSS does not have a similar feature.
+
+// styles.scss (SCSS)
+
+$primaryColor: #3498db;
+
+@mixin buttonStyles {
+  border: 1px solid $primaryColor;
+  padding: 10px 20px;
+  color: $primaryColor;
+}
+
+.button {
+  @include buttonStyles;
+  
+  &:hover {
+    background-color: $primaryColor;
+    color: white;
+  }
+}
+
+.container {
+  h1 {
+    color: $primaryColor;
+  }
+}
+*/ 

@@ -1,0 +1,21 @@
+<div class="message-container">
+    <div class="service-message">{{ greeting }}</div>
+    <div class="client-message">Hello from Angular!</div>
+</div>
+
+
+  <ng-template #data>
+    this is render from ng-template
+  </ng-template>
+
+  <ng-container *ngIf="true">
+    <div *ngTemplateOutlet="data" >1</div>
+  </ng-container>
+  <br>
+  <ng-container *ngIf="false">
+    <div *ngTemplateOutlet="data" >2</div>
+  </ng-container>
+  <br>
+  <ng-container *ngIf="true">
+    <div *ngTemplateOutlet="data" >3</div>
+  </ng-container>
